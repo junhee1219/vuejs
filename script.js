@@ -1,6 +1,9 @@
-var app = new Vue({
-    el: '#app',
-    data: {
-      message: '안녕하세요 Vue!'
+import { createApp, ref } from 'vue'
+
+createApp({
+  setup() {
+    return {
+      count: ref(0)
     }
-  })
+  }
+}).mount('#app')

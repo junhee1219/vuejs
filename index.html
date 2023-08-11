@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>this is vuejs</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.esm-browser.js"></script>
     <script type ="module" src = script.js></script>
 </head>
 <body>
     <div id="app">
-        {{ message }}
+        <button @click="count++">
+          숫자 세기: {{ count }}
+        </button>
       </div>
 </body>
-</html>
-

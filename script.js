@@ -1,9 +1,9 @@
-import { createApp, ref } from 'vue'
+import { createApp } from 'vue'
 
 createApp({
-  setup() {
+  data() {
     return {
-      count: ref(0)
+      count: 0
     }
   }
 }).mount('#app')
